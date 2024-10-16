@@ -4,8 +4,8 @@
 
 
 def all_variants(text):
-    for length in range(1, len(text) + 1):  # итерация по всей строке
-        for index_start in range(len(text) - length + 1):  # итерация по длине подстроки
+    for length in range(1, len(text) + 1):  # итерация по всем возможным длинам подстрок
+        for index_start in range(len(text) - length + 1):  # итерация для выборки подстроки
            yield text[index_start:index_start + length]  # Возвращаем подстроку
 
 
